@@ -35,5 +35,16 @@ i went 2 steps back by using command `cd ..` twice and then executed `challenge/
 Flag is : `pwn.college{8koIO2yqjLJ7ImlmdqxCatInnmw.dlDN1QDLxQjN0czW}`
 
 # vii)  explicit relative paths, from /
+I found the cwd by the command `/` and the output was `/home/hacker`<br>
+i went 2 steps back by using command `cd ..` twice and then executed `./challenge/run`<br>
+Essentially, the motive of the module was to tell me that adding a dot does not make any difference<br>
+Flag is : `pwn.college{YHDdCYN9e2ZT_b6XOOTmTyFzWrl.dBTN1QDLxQjN0czW}`
 
+# ix) implicit relative path
+There is a safety measure in linux to avoid accidental execution of programs<br>
+If i go into directory `cd /challenge` and enter `run` it will not execute the program and i have to mention 
+the relative path of the program explicity to execute it as `./run`<br>
+Flag is : `pwn.college{0dybqXsyMRyhv1vwP5WCYQrp532.dFTN1QDLxQjN0czW}`
+
+# x) home sweet home
 
