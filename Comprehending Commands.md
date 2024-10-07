@@ -24,6 +24,34 @@ Flag is : `pwn.college{s61HFayKQ63q3E1IQ5Lj2VT2G5O.ddTM4QDLxQjN0czW}`
 
 # v) listing files
 The listing command `ls` lists the files in the current working directory<br>
+`ls /challenge` listed the files under the directory  `challenge` and it was `31382-renamed-run-6370`<br>
+I ran that file using `/challenge/31382-renamed-run-6370` and got the flag !<br>
+Flag is : `pwn.college{UY7yXSQgql2_7MEmJkmrr9z4uus.dhjM4QDLxQjN0czW}`
 
 # vi) touching files
+`touch` is a command that creates a blank file in the present working direectory<br>
+`touch /tmp/college` and ` touch /tmp/pwn` creates 2 new blank files <br>
+Then, execute `/challenge/run` to get the flag<br>
+Flag is : `pwn.college{AR2ZOg2HE0Z5rwJ1UkNHqSxN4zW.dBzM4QDLxQjN0czW}`
 
+# vii) removing files 
+Learnt to remove or delete files using the `rm` command<br>
+Initially, created a blank file using `touch delete_me`, then deleted it `rm delete_me`, and executed `/challenge/check` to get flag<br>
+Flag is : `pwn.college{EmapV9W26FhSQxB4LHJVFRci8eI.dZTOwUDLxQjN0czW}`
+
+# ix) hidden Files 
+Some system files that begin with `.` do not show up when `ls` command is passed to the terminal<br>
+To display these files, `ls -a` command must be given<br>
+To find dot prepended files in `/` is changed directory by `cd /` ,then found the file `.flag-47541698019408` and read it by `cat .flag-47541698019408` <br>
+Flag is : `pwn.college{Qf9kGD7A31Y3IkK17o8Mjan0x-d.dBTN4QDLxQjN0czW}`
+
+# x) An Epic Filesystem Quest
+Flag is : `pwn.college{sPvh9agZAobajCier3n0IH6bUyE.dljM4QDLxQjN0czW}`
+
+# xi) making directories
+Learnt to make directories using the `mkdir` command <br>
+Made directory `mkdir /tmp/pwn` and created file `touch /tmp/pwn/college`, then executed `/challenge/run` to get flag<br>
+Flag is : `pwn.college{ksookdeJ9gD5bg9wEMWF58QIORF.dFzM4QDLxQjN0czW}`
+
+# xii) Finding files
+Flag is :  ``
