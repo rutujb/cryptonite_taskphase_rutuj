@@ -39,6 +39,6 @@ Flag is : `pwn.college{sD1qv6RGCeo-NzNUPSnrRSguqOr.ddjM4QDLxQjN0czW}`
 
 # vii) Help for Builtins
 Some commands, rather than being programs with man pages and help options, are built into the shell itself. These are called builtins. You can get a list of shell builtins by running the `builtin help` <br>
-
-Flag is : ``
+In this challenge, `help challenge` will display  builtin help page and the secret key which is `g1goSmUK`. Now, invoke `challenge --secret g1goSmUK` to get the flag <br>
+Flag is : `pwn.college{g1goSmUKnkZ2sX8HbtJC8yu8Irr.dRTM5QDLxQjN0czW}`
 
