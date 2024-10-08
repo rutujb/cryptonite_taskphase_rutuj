@@ -54,4 +54,21 @@ Made directory `mkdir /tmp/pwn` and created file `touch /tmp/pwn/college`, then 
 Flag is : `pwn.college{ksookdeJ9gD5bg9wEMWF58QIORF.dFzM4QDLxQjN0czW}`
 
 # xii) Finding files
-Flag is :  ``
+Find command is used to find files within the system<br>
+It takes 2 optional arguements, firstly the file location, and secondly the name of file<br>
+With the syntax `find /file_location -name file_name`<br>
+In this challenge, the flag was hidden in a random directory and i was expected to find it using `find` command<br>
+Flag is :  `pwn.college{8qkdqBRbiiOM7lJB0Kg9vNR6fbQ.dJzM4QDLxQjN0czW}`
+
+# xiii) linking files 
+Learnt about hard and soft(sybolic) links<br>
+A hard link are multiple adress link to the contents of the same file<br>
+In most cases, both situations result in accessing the original data, but the mechanisms are different.<br>
+The challenge is to get the flag with a symbolic link to `/flag` from `/home/hacker/not-the-flag` <br>
+These were steps I followed to obtain the flag : <br>
+`rm /home/hacker/not-the-flag`<br>
+`ln -s /flag /home/hacker/not-the-flag`<br>
+`/challenge/catflag`<br>
+<br>
+Flag is : `pwn.college{wXvvk2TacwrB47kbq-FC3MBaZ7D.dlTM1UDLxQjN0czW}`
+
