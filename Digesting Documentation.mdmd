@@ -1,7 +1,10 @@
 # Digesting Documentation
 
 # i) Learning From Documentation
-Flag is : ``
+In this challenge, to get the flag, I had to invoke the program `/challenge/challenge` with `--giveflag` as the arguement<br>
+So, the statement is `/challenge/challenge --giveflag`<br>
+Flag is : `pwn.college{QRHmvfwyMkLbuvS42V8YVmnSJnT.dRjM5QDLxQjN0czW}`
+
 # ii) Learning Complex Usage
 Flag is : ``
 
