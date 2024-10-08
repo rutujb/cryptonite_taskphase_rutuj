@@ -31,8 +31,14 @@ Then, executed ` /challenge/challenge --gujrgb 179` to obtain the flag ! <br>
 Flag is : `pwn.college{gP1JuNjW7r9gbtMRlL1I10LvGI1.dZTM4QDLxQjN0czW}`
 
 # vi) Helpful Programs
-Flag is : ``
+Some programs do not have an associated manpage, but tell you how to run with special arguements like `--help` or `-h` <br>
+In this challenge, by invoking `/challenge/challenge --help` command, an instruction page is displayed <br>
+On invoking `/challenge/challenge -p`, secret value is displayed `The secret value is: 164` <br>
+Then, command `/challenge/challenge -g 164` to get flag <br> 
+Flag is : `pwn.college{sD1qv6RGCeo-NzNUPSnrRSguqOr.ddjM4QDLxQjN0czW}`
 
 # vii) Help for Builtins
+Some commands, rather than being programs with man pages and help options, are built into the shell itself. These are called builtins. You can get a list of shell builtins by running the `builtin help` <br>
+
 Flag is : ``
 
