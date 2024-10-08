@@ -47,4 +47,10 @@ the relative path of the program explicity to execute it as `./run`<br>
 Flag is : `pwn.college{0dybqXsyMRyhv1vwP5WCYQrp532.dFTN1QDLxQjN0czW}`
 
 # x) home sweet home
+Learnt that `~` is a shorthand operator to the home directory, i.e. `/home/hacker`<br>
+However, `~/~` expands to `/home/hacker/~` as only the leading `~` expands to `home/hacker`<br>
+In the challenge, I ran `/challenge/run ~/x` which writes the flag in `/challenge/run/x`<br>
+Writing the file to /home/hacker/x!
+... and reading it back to you:
+Flag is : `pwn.college{g4pqlffiMqoatOctjuUkizHRCoF.dNzM4QDLxQjN0czW}`
 
