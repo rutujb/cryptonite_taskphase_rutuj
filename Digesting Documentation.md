@@ -1,4 +1,4 @@
-# Digesting Documentation
+# Module 4 : Digesting Documentation
 
 # i) Learning From Documentation
 In this challenge, to get the flag, I had to invoke the program `/challenge/challenge` with `--giveflag` as the arguement<br>
