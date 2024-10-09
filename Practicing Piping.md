@@ -42,16 +42,21 @@ In this challenge, we redirect output of `/challenge/run > /tmp/data.txt`, then 
 Flag is : `pwn.college{wKpqLYzTQDSMkgqXKoU6SIA7IxX.dhTM4QDLxQjN0czW}`
 
 # vii) Grepping live output
-
-Flag is : ``
+The `|` operator essentially allows you to filter data step-by-step by passing the output of one command directly into another without running 2 lines of command <br>
+Invoking `/challenge/run | grep pwn` executes `/challenge/run` and searches(greps) for `pwn` in `/challenge/run` <br>
+Flag is : `pwn.college{YP4FEYEYl45paVRofCQi-U27l0W.dlTM4QDLxQjN0czW}`
 
 # viii) Grepping errors
-
-Flag is : ``
+`>&` command redirects a file descriptor to another file descriptor <br>
+foe example, `2>&1` redirects FD 2 (stderr) to FD 1 (stdoout) <br>
+In this challenge, we redirect output of errors of  `/challenge/run` to its output an search (grep) for `pwn` in it to get the flag <br> 
+`/challenge/run 2>&1 | grep pwn` <br>
+Flag is : `pwn.college{4UjII6w1uG29BWtxnkR2DX5orJY.dVDM5QDLxQjN0czW}`
 
 # ix) Duplicating piped data with tee
-
-Flag is : ``
+`tee` command, named after a "T-splitter" from plumbing pipes, duplicates data flowing through your pipes to any number of files provided on the command line <br>
+In this challenge, we 
+Flag is : `pwn.college{o11Jp6KOqFiSAQv4ExHRl0gr9tS.dFjM5QDLxQjN0czW}`
 
 # x) Writing to multiple programs
 
