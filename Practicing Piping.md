@@ -59,9 +59,13 @@ In this challenge, we
 Flag is : `pwn.college{o11Jp6KOqFiSAQv4ExHRl0gr9tS.dFjM5QDLxQjN0czW}`
 
 # x) Writing to multiple programs
-
-Flag is : ``
+Process substitution is a feature that allows the output of a command to be used as if it were a file.<br>
+In this challenge, we take output of `/challenge/hack` and pass it as input to the files `/challenge/the` and `/challenge/planet` files using Process Substitution as these fikes do not accept any input by default <br>
+Invoking the command, `/challenge/hack | tee >( /challenge/the ) >( /challenge/planet )` <br>
+Flag is : `pwn.college{YPQforHg7NYSYORFJJLqUkGH-HO.dBDO0UDLxQjN0czW}`
 
 # xi) Split piping stderr and stdout
-
-Flag is : ``
+In this challenge, we connect the standard output of `/challenge/hack` to `/challenge/input` and <br>
+all the standard errors of `/challenge/hack` to `/challenge/the` using process substitution <br>
+` /challenge/hack > >( /challenge/planet ) 2> >( /challenge/the )`
+Flag is : `pwn.college{wqPD6rO2xiOJWO5G9xpjTZ4vVyl.dFDNwYDLxQjN0czW}`
