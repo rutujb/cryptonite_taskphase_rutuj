@@ -1,7 +1,8 @@
 # Module 7 : Shell variables
 # i) Printing Variables
+Flag is : ``
 # ii) Setting Variables
-
+Flag is : ``
 # iii) Multi-word Variables
 Flag is : ``
 # iv) Exporting Variables
