@@ -48,3 +48,25 @@ The encrypted contents are `BNFVF{e0g4g0e_0s_cc75}` <br>
 Using substitution cipher, decoding it, gives the flag which is : `OASIS{r0t4t0r_0f_pp75}` 
 
 # 14) Maze Runner
+An image was given in the challenge of a labyrnith, used google lens to decipher what the given monument is. <br>
+Flag is the surname of Ideator behind the creation of the labyrinth and the name of the place where the object exists. <br>
+When you dig deeper you get the Surname of the Ideator - `Borges` and place is `Fontanello`--> we get this after trying several permutations <br>
+The flag  is : `OASIS{Borges_Fontanellato}`
+
+# 15) Not Noice
+Open the given .wav file in Audacity or any audio file visualizer and change the view to Spectogram to get the flag <br>
+Flag is : `OASIS{5P3CT0GR4M_15_TH3_C00L35T}`
+
+# 16) Nom-Nom
+A pacman game is given which is not working originally for the user <br>
+We have to make it work by inspecting the website and changing it's javascript code to allow the user to play. <br>
+Go to Inspector-->cookies and change cookie value to true and refresh <br>
+Flag is : `OASIS{p@cman_l!k3d_y0ur_c00k!3_<3}`
+
+
+
+
+
+
+
+ 
