@@ -1,5 +1,5 @@
 # Module 7 : Shell variables
-# i) Printing Variables
+## i) Printing Variables
 The `cat` command can be used to print variables also <br>
 Prepending a `$` before the arguement for `cat` indicates that `cat` is supposed to read a varibale <br>
 In this challenge, `cat $FLAG` reads the contents of `FLAG` to get the flag which is :
