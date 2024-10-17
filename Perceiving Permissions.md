@@ -13,6 +13,10 @@ In this challenge, we changed permissions of the `/flag` file from the `root` to
 > pwn.college{gDtQeBG7hR-qyCt1ucssceW2oC6.dFTM2QDLxQjN0czW}
 
 ## ii) Groups and Files
+You can check what groups you are a part of with the `id` command <br>
+
+
+
 ## iii) Fun with Groups Names
 ## iv) Changing Permissions
 ## v) Executable Files
