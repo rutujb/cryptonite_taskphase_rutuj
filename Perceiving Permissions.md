@@ -1,9 +1,13 @@
 # Perceiving Permissions
 You can check out a permissions of a file or directory using `ls -l` <br>
-![image](https://github.com/user-attachments/assets/b759830e-4930-41ef-ae93-eb4317f7dfc3)
-The first character of each line represents the file type, `d` indicates a directory and `-` incdicates a normal file.
+![image](https://github.com/user-attachments/assets/b759830e-4930-41ef-ae93-eb4317f7dfc3) <br>
+The first character of each line represents the file type, `d` indicates a directory and `-` incdicates a normal file. <br>
+The following 9 characters are the actual access permissions of the file, split into 3 parts about which we will learn in this module <br>
+There are 2 columns showing that the user owns the file (`hacker` in this case) and the group owns the file (group is also `hacker` in this case ) <br>
 
 ## i) Changing File Ownership
+we can change the ownership of files using the `chown` (change owner) command with the syntax `chown [username] [file]` <br>
+However, `chown` can only be invoked by the root user <br>
 
 
 ## ii) Groups and Files
