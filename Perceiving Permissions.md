@@ -6,9 +6,11 @@ The following 9 characters are the actual access permissions of the file, split 
 There are 2 columns showing that the user owns the file (`hacker` in this case) and the group owns the file (group is also `hacker` in this case ) <br>
 
 ## i) Changing File Ownership
-we can change the ownership of files using the `chown` (change owner) command with the syntax `chown [username] [file]` <br>
+we can change the ownership of files using the `chown` (change owner) command with the syntax <br>
+`chown [username] [file]` <br>
 However, `chown` can only be invoked by the root user <br>
-
+In this challenge, we changed permissions of the `/flag` file from the `root` to the `hacker` invoking `chown hacker /flag`, then getting flag by `cat /flag` 
+> pwn.college{gDtQeBG7hR-qyCt1ucssceW2oC6.dFTM2QDLxQjN0czW}
 
 ## ii) Groups and Files
 ## iii) Fun with Groups Names
