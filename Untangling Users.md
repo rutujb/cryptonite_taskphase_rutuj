@@ -17,3 +17,16 @@ In this challenge, we invoke `su zardus` to access the user `zardus` and run `/c
 >pwn.college{E4YC9imsxu8Usp42m-48k5hJNXm.dZTN0UDLxQjN0czW}
 
 ## iii) Cracking passwords
+Password of each user is stored in `/etc/shadow` file <br>
+Username and password of a file is seperated by `:` and `*` or `!` symbol means that password login for the account is disabled, and a blank field indicates that the account is not password protected. <br>
+A long string in the place of password is the result of one way encrypting (hashing) <br>
+In this challenge, we learn to crack the password of a user by the famous John the Ripper method. <br>
+We invoke `john /challenge/shadow-leak` to get the password and login to the account by `su zardus` and enter the password obtained which is `aardvark` and run `/challenge/run` to get the flag :
+>pwn.college{w1wm0Rd57JQAqdP-qmb_3hp8wOn.ddTN0UDLxQjN0czW}
+
+## iv) Using Sudo
+We will learn about `sudo` (superuser do) now <br>
+`sudo` basically runs any command given to it's arguement as the `root` user <br>
+The `sudo` method does not authenticate with passwords, instead it checks with policies in `/etc/sudoers` <br>
+In this challenge, we invoke `sudo cat /flag` to get the flag :
+>pwn.college{0I8-5rM3pfcLGGuYe38UON7mBWJ.dhTN0UDLxQjN0czW}
