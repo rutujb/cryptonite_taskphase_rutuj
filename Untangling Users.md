@@ -1,4 +1,4 @@
-# Module 9 : Untangling Users
+# Module 10 : Untangling Users
 The full list of users on a Linux system is specified in the `/etc/passwd` file <br>
 Each line of `/etc/passwd` contains seperated by `:`'s, --> username, password, default numerical group ID, long form user details,home directory,and the default shell. <br>
 
