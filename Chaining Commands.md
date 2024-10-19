@@ -1,4 +1,4 @@
-# Module 10 : Chaning Commands
+# Module 11 : Chaning Commands
 Aside from piping, this modules encloses some more methods to chain commands. <br>
 
 ## i) Chaining with semicolons
