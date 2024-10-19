@@ -8,4 +8,7 @@ Then, we invoke `bash x.sh` to get the flag :
 We write `PATH="/challenge/more_commands/";/challenge/run` into the `x.sh` file and invoke `/challenge/run` with the arguement `win` to get the flag :
 >pwn.college{k2twIBV1HscQWGCuSRtqlnXRe5f.dVzNyUDLxQjN0czW}
 
-## iii) 
+## iii) Adding commands
+
+
+## iv) Hijacking Commands
