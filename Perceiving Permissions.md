@@ -56,8 +56,17 @@ In this challenge, by invoking `chmod u+x /challenge/run`(user gets permission t
 >pwn.college{8K4xLj9QRGBzrjbWuKbQVBwneGM.dJTM2QDLxQjN0czW}
 
 ## vi) Permission Tweaking Practice
-
-
+In this challenge we tweak permissions of files 8 times to get the flag by invoking : <br>
+`chmod go+w /challenge/pwn` <br>
+`chmod ug-r /challenge/pwn` <br>
+`chmod ug-w /challenge/pwn` <br>
+`chmod o-r /challenge/pwn` <br>
+`chmod o-w /challenge/pwn` <br>
+`chmod go+x /challenge/pwn` <br>
+`chmod uo+r,u+x /challenge/pwn` <br>
+`chmod uo-r /challenge/pwn` <br>
+Now, to make the cat file readable, we invoke `chmod a+r /flag` and `cat /flag` to read the flag :
+>pwn.college{QizhPehGrcgtWAcFFSvs8fhoP3h.dBTM2QDLxQjN0czW}
 
 ## vii) Permissions Setting Practice
 ## viii) The SUID Bit
