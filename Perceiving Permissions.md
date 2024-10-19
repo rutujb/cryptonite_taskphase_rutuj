@@ -45,10 +45,19 @@ Thereafter, we invoke `chgrp grp2309 /flag` to get access to and read the flag f
 ## iv) Changing Permissions
 File permissions can be changed by invoking `chmod` command with syntax `chmod [OPTIONS(user.group)] MODE FILE` <br>
 The mode can be specified in two ways. One way is : <br>
-Modifying the existing mode, `chmod` allows you to tweak permissions with the mode format of WHO+/-WHAT, where WHO is user/group/other and WHAT is read/write/execute
-
+Modifying the existing mode, `chmod` allows you to tweak permissions with the mode format of WHO+/-WHAT, where WHO is user/group/other and WHAT is read/write/execute. <br> For example, `g+wx` command allows groups to write and execute, <br>
+`a-rwxx` removes all permissions for the user, group and the world, `go-rw` removes read and write permissions for groups and other users. <br>
+In this challenge, we invoke `chmod go+r /flag` to allow groups and other users to read the `/flag` file so we can <br>
+`cat /flag` to get the flag : 
+>pwn.college{MeIVZg03AjCK4mAGMurULYX-fl4.dNzNyUDLxQjN0czW}
 
 ## v) Executable Files
+In this challenge, by invoking `chmod u+x /challenge/run`(user gets permission to execute) and running `/challenge/run` we get the flag :
+>pwn.college{8K4xLj9QRGBzrjbWuKbQVBwneGM.dJTM2QDLxQjN0czW}
+
 ## vi) Permission Tweaking Practice
+
+
+
 ## vii) Permissions Setting Practice
 ## viii) The SUID Bit
