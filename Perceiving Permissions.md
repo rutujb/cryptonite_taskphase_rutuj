@@ -69,4 +69,26 @@ Now, to make the cat file readable, we invoke `chmod a+r /flag` and `cat /flag` 
 >pwn.college{QizhPehGrcgtWAcFFSvs8fhoP3h.dBTM2QDLxQjN0czW}
 
 ## vii) Permissions Setting Practice
+The `chmod` command can also set permissions using `=` operator <br>
+eg. `u=rw` sets read and write permission for the user and wipes execution permisssion <br>
+If we want to set different permissions for user and groups and others, we can seperate them with `,` in `chmod`'s arguement <br> Also, we can zero out permissions like `o=-` will set user permission to nothing <br>
+In this challenge we tweak permissions of files 8 times to get the flag by invoking : <br>
+`chmod u=r--,g=rwx /challenge/pwn` <br>
+`chmod u+wx,g-x,o=w /challenge/pwn` <br>
+` chmod u-wx,g-w,o=rx /challenge/pwn` <br>
+`chmod u=w,g+w,o=rw /challenge/pwn` <br>
+`chmod u=-,g=w,o+x /challenge/pwn` <br>
+`chmod u+wx,g+rx,o-rw /challenge/pwn` <br>
+`chmod u=r,g=rx,o=r /challenge/pwn` <br>
+`chmod a=x /challenge/pwn` <br>
+Now, to make the cat file readable, we invoke `chmod a=r /flag` and `cat /flag` to read the flag :
+>pwn.college{UH7mLP3BLwAVoL7XryR4ZNoQFsh.dNTM5QDLxQjN0czW}
+
 ## viii) The SUID Bit
+The "Set User ID" (SUID) permissions bit allows the user to run a program as the owner of that program's file.<br>
+![image](https://github.com/user-attachments/assets/c8120a1c-355b-4ae1-99c9-fd84e4415d3e) <br>
+The `s` part in place of the executable bit means that the program is executable with SUID, i.e. regardless of which user runs the program, program will  execute as the owner user <br>
+As the owner of a file, we can set a file's SUID by using `chmod` in the syntax `chmod u+s [program/file_name]` <br>
+In this challenge, we invoke `chmod u+s /challenge/getroot` to set the SUID bit and get to the shell where we <br>
+`cat /flag` :
+>pwn.college{kIYrXFpj2RDnOhsLNiPtUkkGRTl.dNTM2QDLxQjN0czW}
