@@ -35,7 +35,7 @@ i went 2 steps back by using command `cd ..` twice and then executed `challenge/
 Flag is : `pwn.college{8koIO2yqjLJ7ImlmdqxCatInnmw.dlDN1QDLxQjN0czW}`
 
 # vii)  explicit relative paths, from /
-I found the cwd by the command `/` and the output was `/home/hacker`<br>
+I found the cwd by the command `pwd` and the output was `/home/hacker`<br>
 i went 2 steps back by using command `cd ..` twice and then executed `./challenge/run`<br>
 Essentially, the motive of the module was to tell me that adding a dot does not make any difference<br>
 Flag is : `pwn.college{YHDdCYN9e2ZT_b6XOOTmTyFzWrl.dBTN1QDLxQjN0czW}`
