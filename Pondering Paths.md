@@ -31,7 +31,7 @@ Relative paths do not start with `/` but absolute paths begin with `/`<br>
 Using relative path, it searches for the required path in the cwd only thus may be more efficient by narrowing down searching
 area<br>
 I found the cwd by the command `pwd` and the output was `/home/hacker`<br>
-i went 2 steps back by using command `cd ..` twice and then executed `challenge/run`<br>
+i went 2 steps back by using command `cd ../..` and then executed `challenge/run`<br>
 Flag is : `pwn.college{8koIO2yqjLJ7ImlmdqxCatInnmw.dlDN1QDLxQjN0czW}`
 
 # vii)  explicit relative paths, from /
