@@ -9,7 +9,7 @@ We also see the terminal on which the commands are running (TTY) <br>
 total amount of cpu time that the process has eaten up so far (TIME) <br> <br>
 There are 2 ways to specify arguements to `ps` : <br>
 1. Standard Syntax : we can use `-e` to list "every" process and `-f` for a "full format" output, including arguments. These can be combined into a single argument `-ef` <br>
-2. BSD Syntax : a to list processes for all users, `x` to list processes that aren't running in a terminal, and `u` for a "user-readable" output. These can be combined into a single argument `aux`. <br> <br>
+2. BSD Syntax : `a` to list processes for all users, `x` to list processes that aren't running in a terminal, and `u` for a "user-readable" output. These can be combined into a single argument `aux`. <br> <br>
 Differences between `ps aux` and `ps -ef` <br>
 `ps -ef` additionally outputs the Parent Process ID (PPID), while `ps aux` outputs the percentage of total system CPU and Memory that the process is utilizing <br> <br>
 In this challenge, we list processes by `ps -ef` and run `/challenge/7377-run-30750` to get the flag :
@@ -22,7 +22,7 @@ A process is found and to be killed using `ps -ef | grep dont_run` and `kill 73`
 
 ## iii) Interrupting Processes
 used to get rid of the process that's clogging up your terminal <br>
-Pessing `Ctrl + C` interrupts any process waiting for input on terminal, and this application cleanly exits <br>
+Pessing `Ctrl + C` interrupts any process waiting for input on terminal, and this application cleanly exits the process <br>
 In this challenge, we run `/challenge/run` and interrupt it by `Ctrl + C` to get flag :
 >pwn.college{EDJaq9iUgmu4gGDPlES5tz84-vl.dNDN4QDLxQjN0czW}
 
