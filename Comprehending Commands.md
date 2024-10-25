@@ -18,7 +18,7 @@ Flag is : `pwn.college{oUzoeATtCetpN2Li0WLQXXjmJis.dBjM5QDLxQjN0czW}`
 
 # iv) grepping for a needle in a haystack
 This is the command used to search for a substring in a bigger string or a text file<br>
-The command `grep` takes 2 inputs, firstly the SEARCH_STRING and secondly the location of file like `grep SEARCH_STRING FILE_LOCATION`<br>
+The command `grep` takes 2 inputs, firstly the SEARCH_STRING and secondly the location of file like <br> `grep SEARCH_STRING FILE_LOCATION`<br>
 I passed `grep pwn.college /challenge/data.txt` to the terminal to get the flag<br>
 Flag is : `pwn.college{s61HFayKQ63q3E1IQ5Lj2VT2G5O.ddTM4QDLxQjN0czW}`
 
@@ -46,6 +46,7 @@ To find dot prepended files in `/` is changed directory by `cd /` ,then found th
 Flag is : `pwn.college{Qf9kGD7A31Y3IkK17o8Mjan0x-d.dBTN4QDLxQjN0czW}`
 
 # x) An Epic Filesystem Quest
+This challenge was a revision everything learnt uptil now. It encouraged the usage of `cd`, `ls`, and `ls -a` commands <br>
 Flag is : `pwn.college{sPvh9agZAobajCier3n0IH6bUyE.dljM4QDLxQjN0czW}`
 
 # xi) making directories
@@ -61,7 +62,8 @@ In this challenge, the flag was hidden in a random directory and i was expected 
 Flag is :  `pwn.college{8qkdqBRbiiOM7lJB0Kg9vNR6fbQ.dJzM4QDLxQjN0czW}`
 
 # xiii) linking files 
-Learnt about hard and soft(sybolic) links<br>
+`file FILE_NAME` command takes the FILE_NAME as the arguement and displays the type of file <br>
+Learnt about hard and soft(sybolic) links which are created with `ln -s` command <br>
 A hard link are multiple adress link to the contents of the same file<br>
 In most cases, both situations result in accessing the original data, but the mechanisms are different.<br>
 The challenge is to get the flag with a symbolic link to `/flag` from `/home/hacker/not-the-flag` <br>
